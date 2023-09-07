@@ -44,6 +44,12 @@ p{
 
 .row{
 	display: flex;
+	align-items: top;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.row-1{
+	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -52,15 +58,39 @@ p{
 	flex-basis: 50%;
 	min-width: 300px;
 }
-.col-2 img{
-	max-width: 100%;
-	padding: 50px 0;
-}
+
 .col-2 h1{
+	font-size: 60px;
+	line-height: 100px;
+	margin: 25px 1;
+	color: #FFA902;
+}
+
+.col-2 h1:hover{
+	color: #000000;
+}
+
+.col-2 h2{
+	font-size: 60px;
+	line-height: 100vh;
+	margin: 25px 1;
+	color: #000000;
+}
+
+.col-6{
+	flex-basis: 50%;
+	min-width: 300px;
+}
+.col-6 img{
+	width: 300px;
+	margin: 40px;
+}
+.col-6 h1{
 	font-size: 50px;
 	line-height: 60px;
 	margin: 25px 1;
 }
+
 .btn{
 	display: inline-block;
 	background: #ff523b;
@@ -88,7 +118,8 @@ p{
 }
 
 .header{
-	background: #FFA902;
+	height: 100vh;
+	background: linear-gradient(156deg, #fff 50%,#FFA902 50%);
 }
 
 .header .row{
@@ -248,6 +279,11 @@ small{
 	color: #000000;
 	margin-bottom: 20px;
 }
+.footer h1{
+	color: #000000;
+	margin-bottom: 20px;
+	font-size: 1.17rem;
+}
 .footer-col-1{
 	min-width: 50px;
     margin-bottom: 20px;
@@ -274,8 +310,8 @@ small{
 	text-align: center;
 }
 .footer-col-2 img{
-	width:180px;
-	margin-bottom: 20px;
+	width:100px;
+	
 }
 .footer-col-3{
 	flex-basis: 10px;
@@ -682,6 +718,18 @@ form a{
 	outline: none;
 	border: 1px solid #ccc;
 	box-sizing: border-box;
+}
+.btn-1 {
+    display: inline-block;
+    background: #FFA902;
+    color: #fff;
+    padding: 8px 30px;
+    /* margin: 30px 0; */
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn-1:hover{
+	background: #ff523b;
 }
  
 
